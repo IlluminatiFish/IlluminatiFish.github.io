@@ -1,0 +1,50 @@
+.circle {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  position: absolute;
+  border-radius: 55px;
+}
+
+body {
+  background: #333333;
+}
+
+.animation-divider {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+
+}
+
+.greeting-animation h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+.content-divider {
+   padding-top: 25em;
+   color: #fff;
+   font-family: monospace;
+   display: flex;
+   letter-spacing: .15em; 
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
