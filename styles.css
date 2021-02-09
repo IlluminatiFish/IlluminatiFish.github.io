@@ -1,175 +1,101 @@
-
 body {
   background: #333333;
-}
-
-.content-divider {
-  padding-top: 50em;
-  display: flex;
-  justify-content: center;
-
+  margin: 0;
+  padding: 0;
 }
 
 .animation-divider {
   padding-top: 25em;
   display: flex;
   justify-content: center;
-
 }
-
-.text-content h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-}
-
 
 .greeting-animation h1 {
   color: #fff;
   font-family: monospace;
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: 0.15em solid orange;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-.content-divider {
-   padding-top: 25em;
-   color: #fff;
-   font-family: monospace;
-   display: flex;
-   letter-spacing: .15em;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  text-align: center;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
-/******************************/
-/** METER CSS STYLES & KEYFRAMES */
-
-
-.programming_language {
-	overflow:hidden;
-	width:100%;
-  padding-top: 25em;
-
+#header {
+  width: 100%;
+  height: 100px;
+  background: gold;
 }
 
-.programming_language > span {
-	float:left;
-	padding:24px 4.7% 0 0;
-	width:25%;
-	text-align:right;
+.stuck-header-navbar {
+  position: fixed;
+  top: 0;
 }
 
-.programming_language_colored_main_wrap {
-	float:left;
-	padding:15px 0 5px;
-	width:70%;
+#sticky-navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
 }
 
-.programming_language_colored_wrap {
-	position:relative;
-	height:33px;
+#splash-content {
+  width: 100%;
+  height: 879px;
+  background-color: #333333;
 }
 
-.programming_language_colored {
-	position:absolute;
-	width:100%;
-	height:100%;
-	-webkit-animation:move 2s linear .1s normal none 1 ;
-	-moz-animation:move 2s linear .1s normal none 1 ;
-	-ms-animation:move 2s linear .1s normal none 1 ;
-	-o-animation:move 2s linear .1s normal none 1 ;
-	animation:move 2s linear .1s normal none 1 ;
-}
-
-@-webkit-keyframes move {
-	from {width:0;}
-	to {width:100%;}
-}
-
-@-ms-keyframes move {
-	from {width:0;}
-	to {width:100%;}
-}
-
-@-o-keyframes move {
-	from {width:0;}
-	to {width:100%;}
-}
-
-@keyframes move {
-	from {width:0;}
-	to {width:100%;}
-}
-
-.programming_language_colored_wrap > span {
-	position:relative;
-	display:block;
-}
-
-.programming_language_colored > span {
-	display:block;
-	padding:8px 10px;
-	text-align:right;
-	-webkit-animation:opacity 2.5s linear .1s normal none 1 ;
-	-moz-animation:opacity 2.5s linear .1s normal none 1 ;
-	-ms-animation:opacity 2.5s linear .1s normal none 1 ;
-	-o-animation:opacity 2.5s linear .1s normal none 1 ;
-	animation:opacity 2.5s linear .1s normal none 1 ;
-}
-
-@-webkit-keyframes opacity {
-	0% {opacity:0;}
-	90% {opacity:0;}
-	100% {opacity:1;}
-}
-
-@-moz-keyframes opacity {
-	0% {opacity:0;}
-	90% {opacity:0;}
-	100% {opacity:1;}
-}
-
-@-ms-keyframes opacity {
-	0% {opacity:0;}
-	90% {opacity:0;}
-	100% {opacity:1;}
-}
-
-@-o-keyframes opacity {
-	0% {opacity:0;}
-	90% {opacity:0;}
-	100% {opacity:1;}
-}
-
-@keyframes opacity {
-	0% {opacity:0;}
-	90% {opacity:0;}
-	100% {opacity:1;}
-}
-
-.programming_language span {
-  color: #fff;
+#actual-content {
+  width: 100%;
+  height: 849px;
+  background-color: #2b2b2b;
   font-family: monospace;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
+  font-size: 20px;
+}
+
+#footer {
+  width: 100%;
+  height: 43px;
+  background-color: #333333;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
 }
