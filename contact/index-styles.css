@@ -1,0 +1,101 @@
+body {
+  background: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.animation-divider {
+  padding-top: 25em;
+  display: flex;
+  justify-content: center;
+}
+
+.greeting-animation h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  text-align: center;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  background: gold;
+}
+
+.stuck-header-navbar {
+  position: fixed;
+  top: 0;
+}
+
+#sticky-navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
+}
+
+#splash-content {
+  width: 100%;
+  height: 879px;
+  background-color: #333333;
+}
+
+#actual-content {
+  width: 100%;
+  height: 849px;
+  background-color: #2b2b2b;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#footer {
+  width: 100%;
+  height: 43px;
+  background-color: #333333;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+}
