@@ -85,7 +85,7 @@ body {
 .nav {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 30px;
   text-align: center;
 }
 .nav li {
