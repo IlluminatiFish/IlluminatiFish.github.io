@@ -34,7 +34,7 @@
   font-size: 20px;
   background-color: #bbb;
   background-image: url("https://media.discordapp.net/attachments/435368200264220684/762429643650891796/presentation-photo-v3.png?width=375&height=250");
-  color: #a6a6a6;
+  color: #9c9c9c;
 }
 
 .a-flip-box-back {
@@ -59,8 +59,8 @@
 .b-flip-box-front {
   font-size: 20px;
   background-color: #bbb;
-  background-image: url("https://media.discordapp.net/attachments/719421459633537054/769860781558726686/22341e50594e2391e9b3c36cd14c2833.png?width=375&height=250");
-  color: #a6a6a6;
+  background-image: url("https://cdn.discordapp.com/attachments/772368890927644692/810319921091313674/Webp.png");
+  color: #9c9c9c;
 }
 
 .b-flip-box-back {
