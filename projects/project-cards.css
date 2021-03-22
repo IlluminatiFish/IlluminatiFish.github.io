@@ -39,8 +39,8 @@
 
 .a-flip-box-back {
   font-size: 12px;
-  background: #383838;
-  color: white;
+  background: #e1b229;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -65,8 +65,8 @@
 
 .b-flip-box-back {
   font-size: 12px;
-  background: #383838;
-  color: white;
+  background: #e1b229;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -107,7 +107,7 @@
 
 .p-flip-box-back {
   font-size: 12px;
-  background: #383838;
-  color: white;
+  background: #e1b229;
+  color: black;
   transform: rotateY(180deg);
 }
